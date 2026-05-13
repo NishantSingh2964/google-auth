@@ -32,6 +32,9 @@ app.use(express.json());
 app.use(passport.initialize())
 
 //routes
+app.get('/', (req, res) => {
+    res.send('Backend is running');
+});
 app.use('/auth', authRoute)
 
 // Export the app for Vercel
