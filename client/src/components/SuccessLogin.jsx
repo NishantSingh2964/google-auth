@@ -7,11 +7,11 @@ const SuccessLogin = () => {
     if (!user) return null;
 
     return (
-        <div className="min-h-[calc(100vh-80px)] p-4 sm:p-6 md:p-12 animate-fade-in">
-            <div className="max-w-5xl mx-auto">
-                <header className="mb-8 md:mb-10 text-center md:text-left">
-                    <h1 className="text-3xl md:text-4xl font-bold text-gray-900">User Dashboard</h1>
-                    <p className="text-gray-500 mt-2 text-sm md:text-base">Welcome back, {user.name.split(' ')[0]}! Here is your profile overview.</p>
+        <div className="min-h-screen pt-4 pb-12 px-4 sm:px-6 lg:px-8 animate-fade-in">
+            <div className="max-w-7xl mx-auto">
+                <header className="mb-6 md:mb-10 text-center md:text-left">
+                    <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 leading-tight">User Dashboard</h1>
+                    <p className="text-gray-500 mt-2 text-sm sm:text-base px-2 sm:px-0">Welcome back, {user.name.split(' ')[0]}! Here is your profile overview.</p>
                 </header>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -48,30 +48,30 @@ const SuccessLogin = () => {
                         <div className="glass rounded-3xl p-5 sm:p-8 shadow-xl">
                             <h3 className="text-xl font-bold mb-6 text-gray-800">Account Security</h3>
                             <div className="space-y-6">
-                                <div className="flex flex-wrap items-center justify-between p-4 bg-white/50 rounded-2xl border border-gray-100 gap-4">
-                                    <div className="flex items-center gap-4 min-w-[200px]">
-                                        <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-xl font-bold shrink-0">
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 sm:p-4 bg-white/50 rounded-2xl border border-gray-100 gap-3 sm:gap-4">
+                                    <div className="flex items-center gap-3 sm:gap-4 overflow-hidden">
+                                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-lg sm:text-xl font-bold shrink-0">
                                             G
                                         </div>
-                                        <div>
-                                            <p className="font-bold text-gray-800">Google Authentication</p>
-                                            <p className="text-sm text-gray-500 break-all">Linked to {user.email}</p>
+                                        <div className="min-w-0 flex-1">
+                                            <p className="font-bold text-gray-800 text-xs sm:text-base truncate">Google Auth</p>
+                                            <p className="text-[10px] sm:text-sm text-gray-500 truncate">{user.email}</p>
                                         </div>
                                     </div>
-                                    <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap">Active</span>
+                                    <span className="px-2 py-0.5 bg-green-100 text-green-700 rounded-full text-[10px] font-bold uppercase tracking-wider whitespace-nowrap">Active</span>
                                 </div>
 
-                                <div className="flex flex-wrap items-center justify-between p-4 bg-white/50 rounded-2xl border border-gray-100 gap-4">
-                                    <div className="flex items-center gap-4 min-w-[200px]">
-                                        <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 shrink-0">
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 sm:p-4 bg-white/50 rounded-2xl border border-gray-100 gap-3 sm:gap-4">
+                                    <div className="flex items-center gap-3 sm:gap-4 overflow-hidden">
+                                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 shrink-0">
                                             🔑
                                         </div>
-                                        <div>
-                                            <p className="font-bold text-gray-800">JWT Session</p>
-                                            <p className="text-sm text-gray-500">Secure HTTP-Only Cookie</p>
+                                        <div className="min-w-0 flex-1">
+                                            <p className="font-bold text-gray-800 text-xs sm:text-base truncate">JWT Session</p>
+                                            <p className="text-[10px] sm:text-sm text-gray-500 truncate">Secure Cookie</p>
                                         </div>
                                     </div>
-                                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap">Encrypted</span>
+                                    <span className="px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full text-[10px] font-bold uppercase tracking-wider whitespace-nowrap">Encrypted</span>
                                 </div>
                             </div>
                         </div>

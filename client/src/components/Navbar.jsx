@@ -7,9 +7,9 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="glass sticky top-0 z-50 w-full px-4 md:px-10 py-4">
+        <nav className="glass sticky top-0 z-50 w-full px-2 sm:px-4 md:px-10 py-3 sm:py-4">
             <div className="max-w-[1600px] mx-auto flex justify-between items-center">
-                <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                <Link to="/" className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent shrink-0">
                     AuthMaster
                 </Link>
 
