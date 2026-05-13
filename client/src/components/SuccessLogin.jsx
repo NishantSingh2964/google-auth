@@ -17,7 +17,7 @@ const SuccessLogin = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Profile Card */}
                     <div className="lg:col-span-1">
-                        <div className="glass rounded-3xl p-8 shadow-xl text-center">
+                        <div className="glass rounded-3xl p-5 sm:p-8 shadow-xl text-center">
                             <div className="relative inline-block mb-6">
                                 <img 
                                     src={user.picture} 
@@ -45,11 +45,11 @@ const SuccessLogin = () => {
 
                     {/* Stats/Details Card */}
                     <div className="lg:col-span-2 space-y-8">
-                        <div className="glass rounded-3xl p-8 shadow-xl">
+                        <div className="glass rounded-3xl p-5 sm:p-8 shadow-xl">
                             <h3 className="text-xl font-bold mb-6 text-gray-800">Account Security</h3>
                             <div className="space-y-6">
-                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 bg-white/50 rounded-2xl border border-gray-100 gap-4">
-                                    <div className="flex items-center gap-4">
+                                <div className="flex flex-wrap items-center justify-between p-4 bg-white/50 rounded-2xl border border-gray-100 gap-4">
+                                    <div className="flex items-center gap-4 min-w-[200px]">
                                         <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-xl font-bold shrink-0">
                                             G
                                         </div>
@@ -58,11 +58,11 @@ const SuccessLogin = () => {
                                             <p className="text-sm text-gray-500 break-all">Linked to {user.email}</p>
                                         </div>
                                     </div>
-                                    <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase tracking-wider self-start sm:self-center">Active</span>
+                                    <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap">Active</span>
                                 </div>
 
-                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 bg-white/50 rounded-2xl border border-gray-100 gap-4">
-                                    <div className="flex items-center gap-4">
+                                <div className="flex flex-wrap items-center justify-between p-4 bg-white/50 rounded-2xl border border-gray-100 gap-4">
+                                    <div className="flex items-center gap-4 min-w-[200px]">
                                         <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 shrink-0">
                                             🔑
                                         </div>
@@ -71,12 +71,12 @@ const SuccessLogin = () => {
                                             <p className="text-sm text-gray-500">Secure HTTP-Only Cookie</p>
                                         </div>
                                     </div>
-                                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider self-start sm:self-center">Encrypted</span>
+                                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap">Encrypted</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="glass rounded-3xl p-8 shadow-xl">
+                        <div className="glass rounded-3xl p-5 sm:p-8 shadow-xl">
                             <h3 className="text-xl font-bold mb-4 text-gray-800">Raw User Data</h3>
                             <div className="bg-gray-900 rounded-2xl p-6 overflow-x-auto">
                                 <pre className="text-indigo-400 text-sm font-mono leading-relaxed">
