@@ -12,18 +12,18 @@ const Login = () => {
 
     return (
         <div className="min-h-[calc(100vh-80px)] flex items-center justify-center p-6 bg-transparent">
-            <div className="w-full max-w-md animate-fade-in">
+            <div className="w-full max-w-md animate-fade-in px-2">
                 <div className="glass rounded-3xl overflow-hidden shadow-2xl">
-                    <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 p-10 text-center relative overflow-hidden">
+                    <div className="bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 p-8 md:p-10 text-center relative overflow-hidden">
                         {/* Decorative circles */}
                         <div className="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 bg-white/10 rounded-full blur-2xl"></div>
                         <div className="absolute bottom-0 left-0 -ml-10 -mb-10 w-40 h-40 bg-purple-500/20 rounded-full blur-2xl"></div>
                         
-                        <h1 className="text-4xl font-bold text-white mb-3 relative z-10">Welcome</h1>
-                        <p className="text-indigo-100 text-lg relative z-10">Experience secure, seamless authentication</p>
+                        <h1 className="text-3xl md:text-4xl font-bold text-white mb-3 relative z-10">Welcome</h1>
+                        <p className="text-indigo-100 text-base md:text-lg relative z-10">Experience secure, seamless authentication</p>
                     </div>
 
-                    <div className="p-10 bg-white/40">
+                    <div className="p-8 md:p-10 bg-white/40">
                         <p className="text-gray-500 text-center mb-8 font-medium">Continue with your social account</p>
                         
                         <button 

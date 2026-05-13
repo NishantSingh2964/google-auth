@@ -6,20 +6,20 @@ const HomePage = () => {
     const { user } = useAuth();
 
     return (
-        <div className="min-h-[calc(100vh-80px)] flex flex-col items-center justify-center p-6 text-center">
-            <div className="max-w-4xl animate-fade-in">
+        <div className="min-h-[calc(100vh-80px)] w-full flex flex-col items-center justify-center p-6 text-center">
+            <div className="max-w-6xl w-full animate-fade-in">
                 <div className="mb-8 inline-block px-4 py-1.5 glass rounded-full text-indigo-600 font-semibold text-sm tracking-wide uppercase">
                     Revolutionizing Auth
                 </div>
                 
-                <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">
-                    Secure Access for the <br/>
-                    <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+                <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold mb-6 tracking-tight leading-[1.1]">
+                    Secure Access for the 
+                    <span className="block sm:inline bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 bg-clip-text text-transparent sm:ml-3">
                         Modern Web
                     </span>
                 </h1>
                 
-                <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
+                <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed font-medium px-4">
                     The ultimate Google Authentication starter kit. Seamless, secure, and stunningly designed for developers who care about user experience.
                 </p>
 
