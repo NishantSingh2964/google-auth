@@ -7,17 +7,17 @@ const SuccessLogin = () => {
     if (!user) return null;
 
     return (
-        <div className="min-h-[calc(100vh-80px)] p-6 md:p-12 animate-fade-in">
-            <div className="max-w-5xl mx-auto">
-                <header className="mb-10">
-                    <h1 className="text-4xl font-bold text-gray-900">User Dashboard</h1>
-                    <p className="text-gray-500 mt-2">Welcome back, {user.name.split(' ')[0]}! Here is your profile overview.</p>
+        <div className="min-h-screen pt-4 pb-12 px-4 sm:px-6 lg:px-8 animate-fade-in">
+            <div className="max-w-7xl mx-auto">
+                <header className="mb-6 md:mb-10 text-center md:text-left">
+                    <h1 className="text-2xl sm:text-4xl font-bold text-gray-900 leading-tight">User Dashboard</h1>
+                    <p className="text-gray-500 mt-2 text-sm sm:text-base px-2 sm:px-0">Welcome back, {user.name.split(' ')[0]}! Here is your profile overview.</p>
                 </header>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Profile Card */}
                     <div className="lg:col-span-1">
-                        <div className="glass rounded-3xl p-8 shadow-xl text-center">
+                        <div className="glass rounded-3xl p-5 sm:p-8 shadow-xl text-center">
                             <div className="relative inline-block mb-6">
                                 <img 
                                     src={user.picture} 
@@ -45,38 +45,38 @@ const SuccessLogin = () => {
 
                     {/* Stats/Details Card */}
                     <div className="lg:col-span-2 space-y-8">
-                        <div className="glass rounded-3xl p-8 shadow-xl">
+                        <div className="glass rounded-3xl p-5 sm:p-8 shadow-xl">
                             <h3 className="text-xl font-bold mb-6 text-gray-800">Account Security</h3>
                             <div className="space-y-6">
-                                <div className="flex items-center justify-between p-4 bg-white/50 rounded-2xl border border-gray-100">
-                                    <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-xl font-bold">
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 sm:p-4 bg-white/50 rounded-2xl border border-gray-100 gap-3 sm:gap-4">
+                                    <div className="flex items-center gap-3 sm:gap-4 overflow-hidden">
+                                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-lg sm:text-xl font-bold shrink-0">
                                             G
                                         </div>
-                                        <div>
-                                            <p className="font-bold text-gray-800">Google Authentication</p>
-                                            <p className="text-sm text-gray-500">Linked to {user.email}</p>
+                                        <div className="min-w-0 flex-1">
+                                            <p className="font-bold text-gray-800 text-xs sm:text-base truncate">Google Auth</p>
+                                            <p className="text-[10px] sm:text-sm text-gray-500 truncate">{user.email}</p>
                                         </div>
                                     </div>
-                                    <span className="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold uppercase tracking-wider">Active</span>
+                                    <span className="px-2 py-0.5 bg-green-100 text-green-700 rounded-full text-[10px] font-bold uppercase tracking-wider whitespace-nowrap">Active</span>
                                 </div>
 
-                                <div className="flex items-center justify-between p-4 bg-white/50 rounded-2xl border border-gray-100">
-                                    <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">
+                                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 sm:p-4 bg-white/50 rounded-2xl border border-gray-100 gap-3 sm:gap-4">
+                                    <div className="flex items-center gap-3 sm:gap-4 overflow-hidden">
+                                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 shrink-0">
                                             🔑
                                         </div>
-                                        <div>
-                                            <p className="font-bold text-gray-800">JWT Session</p>
-                                            <p className="text-sm text-gray-500">Secure HTTP-Only Cookie</p>
+                                        <div className="min-w-0 flex-1">
+                                            <p className="font-bold text-gray-800 text-xs sm:text-base truncate">JWT Session</p>
+                                            <p className="text-[10px] sm:text-sm text-gray-500 truncate">Secure Cookie</p>
                                         </div>
                                     </div>
-                                    <span className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold uppercase tracking-wider">Encrypted</span>
+                                    <span className="px-2 py-0.5 bg-blue-100 text-blue-700 rounded-full text-[10px] font-bold uppercase tracking-wider whitespace-nowrap">Encrypted</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="glass rounded-3xl p-8 shadow-xl">
+                        <div className="glass rounded-3xl p-5 sm:p-8 shadow-xl">
                             <h3 className="text-xl font-bold mb-4 text-gray-800">Raw User Data</h3>
                             <div className="bg-gray-900 rounded-2xl p-6 overflow-x-auto">
                                 <pre className="text-indigo-400 text-sm font-mono leading-relaxed">

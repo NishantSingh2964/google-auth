@@ -12,7 +12,7 @@ function App() {
     <AuthProvider>
       <Toaster position="top-center" reverseOrder={false} />
       <Router>
-        <div className="min-h-screen">
+        <div className="min-h-screen w-full flex flex-col">
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
