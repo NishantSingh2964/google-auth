@@ -17,7 +17,7 @@ router.get('/user',
 );
 
 router.post('/logout', (req, res) => {
-    res.clearCookie('token', { httpOnly: true, sameSite: 'lax' });
+    res.clearCookie('token', { httpOnly: true, sameSite: 'none', secure: true });
     res.status(200).json({ message: 'logged out successful' });
 });
 
